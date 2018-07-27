@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Indemnización</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    
+    <div><img src="imagen1.png" alt=""></div>
+     <div>
+            <center>
+            <div class="margen">introduce:</div>
+            <!-- div que pregunte si te despidieron o renunciaste y otro si te despidieron injustificadamente-->
+            <div class="margen">¿Fue despido injustificado?<select name="despidoInjustificado" class="selector" id="despidoInjustificado">
+                <option value="1"> </option>
+                <option value="2">Sí</option>
+                <option value="3">No</option>
+            </select></div>
+            <div class="margen">salario mensual: <input type="text" id="salarioMensual" required></div>
+            <div class="margen">fecha entrada: <input type="date" id="fechaIni" required></div>
+            <div class="margen">fecha salida: <input type="date" id="fechaFin" required></div>
+            <div class="margen">horas extra por cobrar: <input type="text" id="horasExtra"></div>
+            <div class="margen">días de vacaciones: <input type="text" id="vacaciones" required></div>
+            <div class="margen">días de vacaciones no tomadas: <input type="text" id="vacacionesNoTomadas" required></div>
+            <div class="margen">días de aguinaldo en contrato: <input type="text" id="diasAguinaldo" required></div>
+            <!-- <div>: <input type="text" id="" required></div> -->
+
+            
+            <div class="margen"><button onclick="funciona('fechaIni', 'fechaFin', 'despidoInjustificado')">Aceptar información</button></div>
+
+            <div id="Mostrar el cálculo"  class="margen">
+                    <div id="datosBasicos1"  class="margen"></div>
+                    <br><br>
+                    <div id="datosBasicos2"  class="margen"></div>
+                    <br><br>
+                    <div  class="margen" id="datosBasicos3"></div>            
+
+
+            </div>
+
+            </center>
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>
